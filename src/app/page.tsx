@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { Footer } from "@/componentes/Footer";
 const WHATSAPP_NUMBER = "558171122999"; // +55 81 7112-2999 sem sinais
 
 export default function Home() {
@@ -133,60 +133,60 @@ export default function Home() {
             Em que posso te acompanhar
           </h2>
 
-         <div className="mt-6 overflow-x-auto">
-  <div className="flex gap-4 md:gap-6 snap-x snap-mandatory">
-    {/* 1 */}
-    <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
-      <h3 className="text-sm font-semibold mb-2">
-        Burnout e esgotamento
-      </h3>
-      <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
-        Quando o trabalho ocupa tudo, o corpo pede pausa e a mente não
-        consegue desligar. Vamos compreender o que está por trás desse
-        cansaço e construir outras formas de se relacionar com o
-        desempenho.
-      </p>
-    </div>
+          <div className="mt-6 overflow-x-auto">
+            <div className="flex gap-4 md:gap-6 snap-x snap-mandatory">
+              {/* 1 */}
+              <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
+                <h3 className="text-sm font-semibold mb-2">
+                  Burnout e esgotamento
+                </h3>
+                <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
+                  Quando o trabalho ocupa tudo, o corpo pede pausa e a mente não
+                  consegue desligar. Vamos compreender o que está por trás desse
+                  cansaço e construir outras formas de se relacionar com o
+                  desempenho.
+                </p>
+              </div>
 
-    {/* 2 */}
-    <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
-      <h3 className="text-sm font-semibold mb-2">
-        Luto e perdas significativas
-      </h3>
-      <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
-        Processar a dor de uma perda não é sobre “superar” rapidamente, mas sobre
-        construir um espaço seguro para sentir, elaborar e encontrar novos modos
-        de continuar. A terapia pode ajudar você a atravessar esse momento com
-        acolhimento, respeito e presença.
-      </p>
-    </div>
+              {/* 2 */}
+              <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
+                <h3 className="text-sm font-semibold mb-2">
+                  Luto e perdas significativas
+                </h3>
+                <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
+                  Processar a dor de uma perda não é sobre “superar” rapidamente, mas sobre
+                  construir um espaço seguro para sentir, elaborar e encontrar novos modos
+                  de continuar. A terapia pode ajudar você a atravessar esse momento com
+                  acolhimento, respeito e presença.
+                </p>
+              </div>
 
-    {/* 3 */}
-    <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
-      <h3 className="text-sm font-semibold mb-2">
-        Ansiedade e autocobrança
-      </h3>
-      <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
-        A sensação de que nunca é suficiente, o medo de falhar, a
-        comparação constante. A terapia pode ser um espaço para você
-        respirar e revisitar essas exigências tão duras.
-      </p>
-    </div>
+              {/* 3 */}
+              <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
+                <h3 className="text-sm font-semibold mb-2">
+                  Ansiedade e autocobrança
+                </h3>
+                <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
+                  A sensação de que nunca é suficiente, o medo de falhar, a
+                  comparação constante. A terapia pode ser um espaço para você
+                  respirar e revisitar essas exigências tão duras.
+                </p>
+              </div>
 
-    {/* 4 */}
-    <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
-      <h3 className="text-sm font-semibold mb-2">
-        Relações, escolhas e sentido
-      </h3>
-      <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
-        Questões com relacionamentos, mudanças de ciclo, decisões
-        difíceis e crises de sentido. Olhamos juntos para o que está
-        vivendo hoje e para o que você deseja construir daqui pra
-        frente.
-      </p>
-    </div>
-  </div>
-</div>
+              {/* 4 */}
+              <div className="snap-start w-[80%] sm:w-[55%] md:w-1/3 rounded-2xl border border-white/10 bg-white/5 p-5 flex-shrink-0">
+                <h3 className="text-sm font-semibold mb-2">
+                  Relações, escolhas e sentido
+                </h3>
+                <p className="text-xs md:text-sm text-zinc-100 leading-relaxed">
+                  Questões com relacionamentos, mudanças de ciclo, decisões
+                  difíceis e crises de sentido. Olhamos juntos para o que está
+                  vivendo hoje e para o que você deseja construir daqui pra
+                  frente.
+                </p>
+              </div>
+            </div>
+          </div>
 
 
           <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
@@ -203,6 +203,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
