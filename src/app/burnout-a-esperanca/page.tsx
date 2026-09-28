@@ -3,14 +3,13 @@
 
 import { Footer } from "@/componentes/Footer";
 import { SummaryCarousel } from "@/componentes/SummaryCarousel";
-import { EnrollModal } from "@/componentes/EnrollModal";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
+// Link de compra da gravação na Hotmart
+const HOTMART_URL = "https://go.hotmart.com/E105869583P?dp=1";
 
 export default function Home() {
-  const [isEnrollOpen, setIsEnrollOpen] = useState(false);
-
   const handleScrollToContent = () => {
     const section = document.getElementById("conteudo-livro");
     if (section) {
@@ -20,12 +19,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col bg-[#24163a]">
-      {/* Modal de inscrição */}
-      <EnrollModal
-        isOpen={isEnrollOpen}
-        onClose={() => setIsEnrollOpen(false)}
-      />
-
       {/* SETA VOLTAR PRO HOME */}
       <header className="w-full px-4 pt-4">
         {/* Botão flutuante para voltar ao início */}
@@ -71,7 +64,7 @@ export default function Home() {
 
               {/* Selo de preço */}
               <span className="relative inline-block bg-amber-300 text-[#301e4b] text-sm md:text-base font-bold px-4 py-1.5 rounded-full shadow-[0_4px_20px_rgba(253,230,138,0.35)] border border-amber-200/60">
-                R$ 40
+                R$ 49,99
               </span>
 
               {/* detalhe de ticket (recorte) */}
@@ -86,12 +79,14 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
-              <button
+              <a
+                href={HOTMART_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-[#301e4b] shadow-lg shadow-amber-300/30 transition hover:-translate-y-0.5 hover:bg-amber-200"
-                onClick={() => setIsEnrollOpen(true)}
               >
                 Quero participar das aulas
-              </button>
+              </a>
 
               <button
                 className="rounded-full border border-amber-200/60 px-6 py-3 text-sm font-medium text-amber-100 hover:bg-amber-50/5"

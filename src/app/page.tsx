@@ -72,6 +72,16 @@ export default function Home() {
               >
                 Ver aulas “Do Burnout à esperança”
               </Link>
+
+              <Link
+                href="/psicopolitica"
+                className="rounded-full border border-amber-200/60 px-6 py-3 text-sm font-medium text-amber-100 hover:bg-amber-50/5"
+              >
+                <span className="mr-2 rounded-full bg-amber-300 px-2 py-0.5 text-[10px] font-bold uppercase text-[#301e4b]">
+                  Novo
+                </span>
+                Workshop “Psicopolítica”
+              </Link>
             </div>
 
             <p className="text-xs text-zinc-300/80">
